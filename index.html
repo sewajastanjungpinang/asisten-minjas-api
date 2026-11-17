@@ -119,7 +119,7 @@ button { -webkit-tap-highlight-color: transparent; }
   async function ask(text) {
     text = (text || "").trim();
     if (!text || busy) return;
-    if (!API_URL || API_URL.indexOf("GANTI-NAMA-WORKER") !== -1) {
+   var API_URL = "https://asisten-minjas-api-proxy.sewajas-tanjungpinang.workers.dev";
       add("bot", "Aplikasi belum dikonfigurasi. Silakan hubungi Admin.");
       return;
     }
