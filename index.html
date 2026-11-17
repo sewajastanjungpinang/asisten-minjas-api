@@ -131,6 +131,7 @@ button { -webkit-tap-highlight-color: transparent; }
     var bubble = add("bot", "Sedang mengetik...");
     var controller = window.AbortController ? new AbortController() : null;
     var timeout = controller ? window.setTimeout(function () { controller.abort(); }, 30000) : null;
+    var API_URL = "https://asisten-minjas-api-proxy.sewajas-tanjungpinang.workers.dev";
     try {
       var response = await fetch(API_URL, {
         method: "POST",
